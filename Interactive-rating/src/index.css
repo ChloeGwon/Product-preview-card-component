@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+:root{
+ --orange: hsl(25, 97%, 53%);
+ --white: hsl(0, 0%, 100%);
+ --light-grey: hsl(217, 12%, 63%);
+ --medium-grey: hsl(216, 12%, 54%);
+ --dark-blue: hsl(213, 19%, 18%);
+ --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background: var(--very-dark-blue);
+  width: 100%;
+  height: calc(100vh - 0.1px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.wrapper{
+  background: linear-gradient(var(--dark-blue), var(--very-dark-blue));
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 10px;
+  min-width: 380px;
+}
+
+ul{
+  justify-content: center;
+  align-items: center;
+}
+
+.btnNum{
+  font-weight: 600;
+}
+
+.btnNum:focus{
+  background-color: var(--light-grey);
+}
+
+.btnNum:hover{
+  background-color: var(--orange);
+}
+
+.btn-submit{
+  background-color: var(--orange);
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-submit:hover{
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.rateResult{
+  color: var(--orange);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    background: linear-gradient(var(--dark-blue), var(--very-dark-blue));
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-width: 350px;
+  }
+}
